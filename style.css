@@ -14,7 +14,7 @@ body {
     /* margin: 0px; */
 }
 
-.container p {
+.container .description {
     font-size: 20px;
     color: #E5E5E5;
     max-width: 40%;
@@ -23,7 +23,7 @@ body {
 }
 
 @media (max-width: 800px) {
-    .container p {
+    .container .description {
         max-width: 80%;
     }
 }
@@ -67,4 +67,35 @@ body {
     color: #fff;
     font-size: 28px;
     font-weight: bold;
+}
+
+.typing {
+    letter-spacing: 4px;
+    font-size: 24px;
+    margin: 25px auto;
+    max-width: 50%;
+    line-height: 50px;
+}
+
+.highlight {
+    background-color: rgb(134, 134, 134);
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
+input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    opacity: 0;
+    pointer-events: auto;
 }
