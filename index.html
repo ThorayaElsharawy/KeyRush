@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <section class="container">
         <h1>KeyRush</h1>
-        <p class="description">Typing is a skill that improves with consistent practice. Focus on accuracy first, then speed. The more you type, the better you get!</p>
+        <p class="description">Typing is a skill that improves with consistent practice. Focus on accuracy first, then
+            speed. The more you type, the better you get!</p>
+        <nav>
+            <p>Time :</p>
+            <ul>
+                <li class="active">5</li>
+                <li>30</li>
+                <li>60</li>
+                <li>120</li>
+            </ul>
+        </nav>
+        <button class="reset">Reset</button>
+
+        <div class="timer-container"></div>
+     
         <button class="typing-btn">Start Typing</button>
         <div class="stats">
             <div class="stat-box">
                 <h5 class="label">Time</h5>
-                <p class="value">0s</p>
+                <p class="value value-2 time-value">0s</p>
             </div>
-            <div  class="stat-box">
+            <div class="stat-box">
                 <h5 class="label">WPM</h5>
-                <p class="value">0</p>
+                <p class="value wpm-value">0</p>
             </div>
             <div class="stat-box">
                 <h5 class="label">Accurancy</h5>
-                <p class="value">0%</p>
+                <p class="value accuracy-value">0%</p>
             </div>
         </div>
 
@@ -30,4 +46,5 @@
     </section>
     <script src="main.js"></script>
 </body>
+
 </html>
