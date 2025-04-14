@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <section class="container">
+    <canvas id="skyCanvas"></canvas>
+
+    <!-- <section class="container">
         <h1>KeyRush</h1>
         <p class="description">Typing is a skill that improves with consistent practice. Focus on accuracy first, then
             speed. The more you type, the better you get!</p>
@@ -43,8 +47,63 @@
         </div>
 
         <input type="text">
-    </section>
-    <script src="main.js"></script>
+    </section> -->
+    <main>
+        <header>
+            <small>Adventure</small>
+            <h1>KeyRush</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="active"> <i class="fa-solid fa-clock"></i>time</li>
+                <li><i class="fa-solid fa-a "></i> word</li>
+                <li><i class="fa-solid fa-quote-left"></i>quote</li>
+            </ul>
+            <div class="separator"></div>
+            <ul id="time-list">
+                <li class="active">5</li>
+                <li>30</li>
+                <li>60</li>
+                <li>120</li>
+            </ul>
+            <!-- <ul id="word-list">
+                <li class="active">5</li>
+                <li>30</li>
+                <li>60</li>
+                <li>120</li>
+            </ul> -->
+        </nav>
+        <div class="container">
+            <img class="moon" src="moon.png" alt="moon">
+            <div class="test-box">
+                <div>
+                    <h2>Learn Touch Typing for free!</h2>
+                    <div class="words-wrapper">
+                        the quick brown fox jumps over the lazy dog. Typing tests help improve speed and accuracy.
+                        Practice daily to build muscle memory and confidence.
+                        <div class="counter-box">
+                            <i class="fa-solid fa-rotate-left reset"></i>
+                            <p class="counter"> 
+                                5
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <button class="startBtn">Get started</button> -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="clouds">
+            <img class="cloud1" src="assets/clouds1.png" alt="">
+            <img class="cloud2" src="assets/clouds2.png" alt="">
+            <img class="cloud3" src="assets/clouds3.png" alt="">
+        </div>
+    </main>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="canvas.js"></script>
 </body>
 
 </html>
