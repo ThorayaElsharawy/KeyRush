@@ -56,24 +56,8 @@ body {
     background-color: rgb(134, 134, 134);
 }
 
-.correct {
-    color: green;
-}
 
-.wrong {
-    color: red;
-}
 
-input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    opacity: 0;
-    pointer-events: auto;
-}
 
 .reset {
     background-color: white;
@@ -114,6 +98,8 @@ nav {
     margin: auto;
     display: flex;
     align-items: center;
+    transition: all 1s ease;
+    position: relative;
 }
 
 nav ul {
@@ -121,9 +107,10 @@ nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
     margin: 0;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 nav ul li {
@@ -142,7 +129,8 @@ main {
     position: relative;
 }
 .container {
-    margin: 100px auto 50px auto;
+    /* margin: 100px auto 50px auto; */
+    margin: auto;
     color: #fff;
 
     display: grid;
@@ -150,7 +138,7 @@ main {
     align-items: center;
     justify-content: space-between;
     max-width: 70%;
-    height: 100%;
+    height: 500px;
 
     position: relative;
 }
@@ -278,4 +266,25 @@ main {
 
 .fa-solid {
     margin-right: 5px;
+}
+input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+.active-type {
+    color: purple;
 }

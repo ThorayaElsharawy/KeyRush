@@ -12,97 +12,63 @@
 
 <body>
     <canvas id="skyCanvas"></canvas>
-
-    <!-- <section class="container">
-        <h1>KeyRush</h1>
-        <p class="description">Typing is a skill that improves with consistent practice. Focus on accuracy first, then
-            speed. The more you type, the better you get!</p>
-        <nav>
-            <p>Time :</p>
-            <ul>
-                <li class="active">5</li>
-                <li>30</li>
-                <li>60</li>
-                <li>120</li>
-            </ul>
-        </nav>
-        <button class="reset">Reset</button>
-
-        <div class="timer-container"></div>
-     
-        <button class="typing-btn">Start Typing</button>
-        <div class="stats">
-            <div class="stat-box">
-                <h5 class="label">Time</h5>
-                <p class="value value-2 time-value">0s</p>
-            </div>
-            <div class="stat-box">
-                <h5 class="label">WPM</h5>
-                <p class="value wpm-value">0</p>
-            </div>
-            <div class="stat-box">
-                <h5 class="label">Accurancy</h5>
-                <p class="value accuracy-value">0%</p>
-            </div>
-        </div>
-
-        <input type="text">
-    </section> -->
     <main>
         <header>
             <small>Adventure</small>
             <h1>KeyRush</h1>
         </header>
         <nav>
-            <ul>
-                <li class="active"> <i class="fa-solid fa-clock"></i>time</li>
-                <li><i class="fa-solid fa-a "></i> word</li>
-                <li><i class="fa-solid fa-quote-left"></i>quote</li>
+            <ul id="options-list">
+                <li data-type="time" class="active-type"> <i class="fa-solid fa-clock"></i>time</li>
+                <li data-type="word"><i class="fa-solid fa-a "></i> word</li>
+                <li data-type="quote"><i class="fa-solid fa-quote-left"></i>quote</li>
             </ul>
             <div class="separator"></div>
-            <ul id="time-list">
+            
+            <ul class="option-menu" id="time">
                 <li class="active">5</li>
                 <li>30</li>
                 <li>60</li>
                 <li>120</li>
             </ul>
-            <!-- <ul id="word-list">
-                <li class="active">5</li>
-                <li>30</li>
-                <li>60</li>
-                <li>120</li>
-            </ul> -->
+            <ul class="option-menu" id="word" style="display: none;">
+                <li class="active">10</li>
+                <li>20</li>
+                <li>50</li>
+            </ul>
+            <ul class="option-menu" id="quote" style="display: none;">
+                <li class="active">Short</li>
+                <li>Medium</li>
+                <li>Long</li>
+            </ul>
         </nav>
         <div class="container">
             <img class="moon" src="moon.png" alt="moon">
             <div class="test-box">
                 <div>
                     <h2>Learn Touch Typing for free!</h2>
-                    <div class="words-wrapper">
-                        the quick brown fox jumps over the lazy dog. Typing tests help improve speed and accuracy.
-                        Practice daily to build muscle memory and confidence.
+                    <div class="words-wrapper" style="display: none;">
+                        <p class="words" style="margin: 0;"></p>
                         <div class="counter-box">
                             <i class="fa-solid fa-rotate-left reset"></i>
-                            <p class="counter"> 
+                            <p class="timer" style="display: none;">
                                 5
                             </p>
                         </div>
                     </div>
-                    <!-- <button class="startBtn">Get started</button> -->
+                    <button class="startBtn">Get started</button>
                 </div>
             </div>
         </div>
-
-
-
         <div class="clouds">
             <img class="cloud1" src="assets/clouds1.png" alt="">
             <img class="cloud2" src="assets/clouds2.png" alt="">
             <img class="cloud3" src="assets/clouds3.png" alt="">
         </div>
+        <input type="text">
     </main>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
     <script src="canvas.js"></script>
 </body>
 
